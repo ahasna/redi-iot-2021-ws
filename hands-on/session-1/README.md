@@ -173,6 +173,8 @@ cd ~/redi-iot-2021-ws/examples
 python3 hello_world.py
 ```
 
+- try to update the code and play around
+
 ![Git Clone](img/git-clone.gif)
 
 ## Congratulations
