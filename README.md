@@ -1,1 +1,1 @@
-# redi-iot-2021-ws
+# ReDI IoT in Action Raspberry Pi Workshop
