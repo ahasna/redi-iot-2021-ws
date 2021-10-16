@@ -25,7 +25,7 @@ def color_it(text, color):
 
 
 colors = ["red", "green", "yellow", "cyan", "purple"]
-hello = "Hello from the other side"
+hello = "Hello from the other side 11"
 congrats = "Congrats you finished your first Challenge!"
 for i in range(10):
     rand_color = choice(colors)
