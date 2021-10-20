@@ -69,3 +69,113 @@ Vi0=
 ![MQTT FX Broker Config 5](img/mqtt-fx-add-broker-5.png)
 
 ![MQTT FX Broker Config 6](img/mqtt-fx-add-broker-6.png)
+
+## IoT Project - Hands On
+
+### Back-end Setup
+
+#### Get the code onto your Raspberry Pi
+
+- connect to your Pi as explained [here](https://github.com/ahasna/redi-iot-2021-ws/tree/main/hands-on/session-1#connect-to-raspberry-pi)
+
+- clone the project example code by executing these commands:
+
+```bash
+cd ~
+git clone https://github.com/ahasna/iot-sensor.git
+```
+
+- install dependencies (programming libraries):
+
+```bash
+cd ~/iot-sensor
+pi3 install -r requirements.txt
+```
+
+- edit the following in `run.py` and make sure to have a unique topic name:
+
+```python
+# VARS
+mqtt_broker = "broker.mqttdashboard.com"
+mqtt_broker_port = 1883
+temp_topic = "redi-iot-2021/t" # <-- update temperature topic and make sure it is unique
+humidity_topic = "redi-iot-2021/h" # <-- update humidity topic and make sure it is unique
+```
+
+- save your changes
+
+- run the code:
+
+```bash
+python3 /home/pi/iot-sensor/run.python
+
+# you should get an output similar to this:
+
+Connected to MQTT Broker: broker.mqttdashboard.com  on Port: 1883
+
+Light Topic:  redi-iot-2021/asem/light
+Temp. Topic:  redi-iot-2021/asem/t
+Humidity Topic:  redi-iot-2021/asem/h
+
+Temperature: 27 C Humidity: 37 %
+```
+
+Congratulations your backend is good to go :tada:
+
+### Front-end Setup
+
+- download the code as `.zip` file from [here](https://github.com/ahasna/iot-dashboard)
+
+![MQTT FX Broker Config 6](img/iot-project-fe-1.png)
+
+- unzip the code and open it in an editor (VS Code for example :wink:)
+
+- edit `js/app.js` and update the topics to match the values you have setup in the previous step:
+
+```js
+  //MQTT
+  const mqtt_broker = "broker.mqttdashboard.com";
+  const temp_topic = "redi-iot-2021/t";
+  const humidity_topic = "redi-iot-2021/h";
+  const light_topic = "redi-iot-2021/light";
+```
+
+![MQTT FX Broker Config 6](img/iot-project-fe-2.png)
+
+- save your changes and open `index.html` in browser. If all went well you should see the following result:
+
+![MQTT FX Broker Config 6](img/iot-project-fe-3.png)
+
+Congrats once again! You have finished your first end-to-end IoT Solution :tada: :tada:
+
+## Further Reading and Resource
+
+- [Python for Everybody](https://www.py4e.com/) a great beginner course to learn Python
+
+- [Python Tutorial for Beginners](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&ab_channel=CoreySchafer)
+
+- [Node-RED: Low-code programming for event-driven applications](https://nodered.org/)
+
+- [MQTT Official Website](https://mqtt.org/)
+
+- [MQTT Essentials](https://www.hivemq.com/mqtt-essentials/)
+
+- [Paho MQTT Python Client](https://www.eclipse.org/paho/index.php?page=clients/python/index.php)
+
+- [HiveMQ Public MQTT Broker](https://www.hivemq.com/public-mqtt-broker/)
+
+- [Eclipse Mosquitto Open Source MQTT Broker](https://mosquitto.org/)
+
+- [How-To Get Started with Mosquitto MQTT Broker on a Raspberry Pi](https://www.youtube.com/watch?v=AsDHEDbyLfg&ab_channel=BRUHAutomation)
+
+- [Understanding MQTT: How Smart Home Devices Communicate](https://www.youtube.com/watch?v=NjKK5ab0-Kk&ab_channel=TheHookUp)
+
+- [Node Red MQTT on the Raspberry Pi](https://www.youtube.com/watch?v=WxUTYzxIDns&ab_channel=RichardWenner)
+
+- [Creating A Machine Learning IoT App on Raspberry Pi with Node-RED and TensorFlow.js](https://www.youtube.com/watch?v=6sFrQaDtK5Q&ab_channel=PaulVanEck)
+
+## Contact
+
+if you have any questions or you need any help doing some cool IoT or any other Programming stuff, feel free to send me an email to: `asem.hasna@gmail.com`
+
+Happy Coding!
