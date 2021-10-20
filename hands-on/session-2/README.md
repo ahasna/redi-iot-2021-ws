@@ -174,6 +174,8 @@ Congrats once again! You have finished your first end-to-end IoT Solution :tada:
 
 - [Creating A Machine Learning IoT App on Raspberry Pi with Node-RED and TensorFlow.js](https://www.youtube.com/watch?v=6sFrQaDtK5Q&ab_channel=PaulVanEck)
 
+- [Home Assistant: an Open-Source Home automation Platform](https://www.home-assistant.io/)
+
 ## Contact
 
 if you have any questions or you need any help doing some cool IoT or any other Programming stuff, feel free to send me an email to: `asem.hasna@gmail.com`
