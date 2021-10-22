@@ -1,4 +1,4 @@
-# Raspberyy Pi Initial Setup
+# Raspberry Pi Initial Setup
 
 ## Headless SSH & WiFi Setup
 
