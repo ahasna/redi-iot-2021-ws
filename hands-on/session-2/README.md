@@ -89,7 +89,7 @@ git clone https://github.com/ahasna/iot-sensor.git
 
 ```bash
 cd ~/iot-sensor
-pi3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 - edit the following in `run.py` and make sure to have a unique topic name:
