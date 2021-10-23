@@ -107,7 +107,7 @@ humidity_topic = "redi-iot-2021/h" # <-- update humidity topic and make sure it 
 - run the code:
 
 ```bash
-python3 /home/pi/iot-sensor/run.python
+python3 /home/pi/iot-sensor/run.py
 
 # you should get an output similar to this:
 
